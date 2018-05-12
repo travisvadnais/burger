@@ -9,4 +9,17 @@ router.get("/", function(req,res){
     })
 });
 
+router.put("/burgers/update", function(req, res) {
+    burger.update(req.body.burger_id, function(res){
+        console.log(res);
+        res.redirect('/');
+    })
+})
+
+router.post("/burgers/insert", function(req, res) {
+    burger.insertOne(req.body.burger_name, function(res) {
+        res.redirect('/');
+    })
+})
+
 module.exports = router;

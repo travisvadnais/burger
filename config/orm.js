@@ -8,7 +8,23 @@ var orm = {
             //This callback will allow the data to be used in the 'Models' folder
             cb(res);
         })
+    },
+
+    update: function(table, devoured, cb) {
+        connection.query(`UPDATE ${table} SET devoured=true WHERE id=${devoured};`, function(err, res) {
+            if(err) throw err;
+            cb(res);
+        })
+    },
+
+    insertOne: function(table, val, cb) {
+        connection.query(`INSERT INTO ${table} (burger_name) VALUES ${val};`, function(err, res){
+            if(err) throw err;
+            cb(res);
+        })
     }
+
+    
     
 
 }
