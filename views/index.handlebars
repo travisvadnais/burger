@@ -1,1 +1,45 @@
-<p>Successfully Connected to server!</p>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Eat the Burger!</h1><hr>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <h2>Burgers to Eat</h2>
+            <ul>
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                    <pre>{{this.id}}. {{this.burger_name}}</pre>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h2></h2>
+            <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
+                <input type="hidden" name="burger_id" value={{this.id}}><br>
+                <button type="submit" class="btn btn-default">Devour It</button>
+            </form>
+        </div>
+        {{/unless}}
+        {{/each}}
+        <div class="col-md-6">
+            <h2>Burgers You've Eaten</h2>
+            <ul>
+                {{#each burgers}}
+                    {{#if this.devoured}}
+                    <pre>{{this.id}}. {{this.burger_name}}</pre>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="offset-sm-3">
+            <form action="/burgers/insert" method="POST">
+                <input type="text" name="burger_name" class="form-control" id="enter_burger" value="">
+                <button type="submit" class="btn btn-primary" id="enter_button">Add Burger!</button>
+            </form>
+        </div>
+    </div>
+</div>
