@@ -6,7 +6,7 @@ var routes = require('./controllers/routes.js');
 var port = 3000;
 var app = express();
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({
     extended: false

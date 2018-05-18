@@ -1,0 +1,9 @@
+img.burger {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0 50px 10px;
+}
+
+p {
+    margin-left: 20px;
+}
