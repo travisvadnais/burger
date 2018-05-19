@@ -16,10 +16,6 @@
     },
     "production": {
       "use_env_variable": "JAWSDB_URL",
-      "username": "root",
-      "password": "8706213Ab",
-      "database": "burgers_db",
-      "host": "127.0.0.1",
       "dialect": "mysql"
     }
   }
