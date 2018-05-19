@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/travisvadnais/burger.git"
+    "url": "git+https://github.com/travisvadnais/veg-e-burger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/travisvadnais/burger/issues"
+    "url": "https://github.com/travisvadnais/veg-e-burger/issues"
   },
-  "homepage": "https://github.com/travisvadnais/burger#readme",
+  "homepage": "https://github.com/travisvadnais/veg-e-burger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
