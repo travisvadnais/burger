@@ -18,7 +18,9 @@ p {
 img.burger {
     max-width: 250px;
     max-height: 250px;
-    margin-left: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
 }
 
@@ -57,3 +59,18 @@ ul pre {
     background-color: darkslateblue;
     color: white;
 }
+
+/* @media only screen and (max-width: 1440px) {
+    div.hide_on_big {
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    img.burger {
+        display: none;
+    }
+    div.hide_on_tablet {
+        display: none;
+    }
+} */

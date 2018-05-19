@@ -6,7 +6,7 @@
 </div> 
 <div class="container">
     <div class="row">
-        <div class="col-md-4 burgers_to_eat">
+        <div class="col-sm-4 burgers_to_eat">
             <h2>Burgers to Eat</h2><br>
             <ul class="burgers_to_eat">
                 {{#each burgers}}
@@ -22,14 +22,14 @@
             {{/unless}}
             {{/each}}
         </div>
-        <div class="col-md-4">
-            <img src="./images/burgerpic.jpg" class="burger">
+        <div class="col-sm-4 hide_on_tablet">
+            <img src="./images/burgerpic.png" class="burger">
             <form action="/burgers/insert" method="POST">
                 <input type="text" name="burger_name" class="form-control" id="enter_burger" value="">
                 <button type="submit" class="btn btn-primary" id="enter_button">Add Burger!</button>
             </form>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-4">
             <h2>Burgers You've Eaten</h2><br>
             <ul>
                 {{#each burgers}}
